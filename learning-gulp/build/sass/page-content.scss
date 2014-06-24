@@ -1,0 +1,118 @@
+.text-section{
+    position: relative;
+    @extend .grid;
+    padding: 40px 0;
+}
+.sidebar{
+    display: block;
+    width: $col-2-10;
+    padding-right: rem(10px);
+    margin-left: $col-1-10;
+    float: left;
+    &.attach{
+        position: fixed;
+        top: 10px;
+    }
+    a{
+        display: block;
+        padding: 0 0 rem(10px);
+        color: $black;
+        text-decoration: none;
+        font-size: em(14px);
+        font-family: font-type(body);
+        font-weight: 700;
+        letter-spacing: .1em;
+        line-height: em(18px, 14px);
+        text-transform: uppercase;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        ul{
+            padding-left: rem(15px);
+            a{
+                font-size: em(12px);
+                font-weight: 400;
+            }
+        }
+    }
+}
+.page-text{
+    display: block;
+    width: $col-6-10;
+    padding-left: rem(10px);
+    margin-left: $col-3-10;
+    .page-section{
+        padding-bottom: rem(40px);
+    }
+    h1{
+        margin: 0 0 rem(20px);
+        color: $main-color;
+        font-family: font-type(title);
+        font-size: em(38px);
+        font-weight: 600;
+        letter-spacing: .1em;
+        line-height: 1em;
+    }
+    h2{
+        margin: rem(40px) 0 rem(20px);
+        color: $black;
+        letter-spacing: .1em;
+        text-transform: capitalize;
+    }
+    h1 + h2{
+        margin-top: 0
+    }
+    h3{
+        margin: 0 0 rem(20px);
+        color: lighten($black, 20);
+    }
+    p{
+        margin: 0 0 rem(20px);
+        letter-spacing: .05em;
+        line-height: 1.7em;
+        text-align: justify;
+    }
+}
+.code-bit{
+    vertical-align: middle;
+    background: darken($o-white, 2);
+    padding: 0 4px;
+    border-radius: 4px;
+    font-family: font-type(code);
+    font-size: em(14px);
+}
+.term-bit{
+    @extend .code-bit;
+    background: $black;
+    color: #25F92C;
+}
+.code{
+    @extend .code-bit;
+    padding: rem(10px);
+    margin: 0 0 rem(20px);
+    .comment{
+        color: lighten($black, 20);
+    }
+    >div{
+        padding:0 0 rem(20px);
+        div{
+            padding-left: 1.5em;
+        }
+        &.comment{
+            padding: 0;
+        }
+        &:last-child{
+            padding: 0;
+        }
+    }
+}
+.term-code{
+    @extend .code;
+    background: $black;
+    color: #25F92C;
+    > div{
+        padding: 0;
+    }
+}

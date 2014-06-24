@@ -1,0 +1,111 @@
+.grid{
+    width: $width;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+// Halves
+
+$col-1-1: $width;
+
+$col-1-2: ($width / 2) * 1;
+
+// 3rds
+
+$col-1-3: ($width / 3) * 1;
+$col-2-3: ($width / 3) * 2;
+
+// 4ths
+
+$col-1-4: ($width / 4) * 1;
+$col-2-4: ($width / 4) * 2;
+$col-3-4: ($width / 4) * 3;
+
+// 5ths
+
+$col-1-5: ($width / 5) * 1;
+$col-2-5: ($width / 5) * 2;
+$col-3-5: ($width / 5) * 3;
+$col-4-5: ($width / 5) * 4;
+
+// 6ths
+
+$col-1-6: ($width / 6) * 1;
+$col-2-6: ($width / 6) * 2;
+$col-3-6: ($width / 6) * 3;
+$col-4-6: ($width / 6) * 4;
+$col-5-6: ($width / 6) * 5;
+
+// 8ths
+
+$col-1-8: ($width / 8) * 1;
+$col-2-8: ($width / 8) * 2;
+$col-3-8: ($width / 8) * 3;
+$col-4-8: ($width / 8) * 4;
+$col-5-8: ($width / 8) * 5;
+$col-6-8: ($width / 8) * 6;
+$col-7-8: ($width / 8) * 7;
+
+// 10ths
+
+$col-1-10: ($width / 10) * 1;
+$col-2-10: ($width / 10) * 2;
+$col-3-10: ($width / 10) * 3;
+$col-4-10: ($width / 10) * 4;
+$col-5-10: ($width / 10) * 5;
+$col-6-10: ($width / 10) * 6;
+$col-7-10: ($width / 10) * 7;
+$col-8-10: ($width / 10) * 8;
+$col-9-10: ($width / 10) * 9;
+
+// 12ths
+
+$col-1-12: ($width / 12) * 1;
+$col-2-12: ($width / 12) * 2;
+$col-3-12: ($width / 12) * 3;
+$col-4-12: ($width / 12) * 4;
+$col-5-12: ($width / 12) * 5;
+$col-6-12: ($width / 12) * 6;
+$col-7-12: ($width / 12) * 7;
+$col-8-12: ($width / 12) * 8;
+$col-9-12: ($width / 12) * 9;
+$col-10-12: ($width / 12) * 10;
+$col-11-12: ($width / 12) * 11;
+
+// 14ths
+
+$col-1-14: ($width / 14) * 1;
+$col-2-14: ($width / 14) * 2;
+$col-3-14: ($width / 14) * 3;
+$col-4-14: ($width / 14) * 4;
+$col-5-14: ($width / 14) * 5;
+$col-6-14: ($width / 14) * 6;
+$col-7-14: ($width / 14) * 7;
+$col-8-14: ($width / 14) * 8;
+$col-9-14: ($width / 14) * 9;
+$col-10-14: ($width / 14) * 10;
+$col-11-14: ($width / 14) * 11;
+$col-12-14: ($width / 14) * 12;
+$col-12-14: ($width / 14) * 13;
+
+// 16ths
+
+$col-1-16: ($width / 16) * 1;
+$col-2-16: ($width / 16) * 2;
+$col-3-16: ($width / 16) * 3;
+$col-4-16: ($width / 16) * 4;
+$col-5-16: ($width / 16) * 5;
+$col-6-16: ($width / 16) * 6;
+$col-7-16: ($width / 16) * 7;
+$col-8-16: ($width / 16) * 8;
+$col-9-16: ($width / 16) * 9;
+$col-10-16: ($width / 16) * 10;
+$col-11-16: ($width / 16) * 11;
+$col-12-16: ($width / 16) * 12;
+$col-13-16: ($width / 16) * 13;
+$col-14-16: ($width / 16) * 14;
+$col-15-16: ($width / 16) * 15;

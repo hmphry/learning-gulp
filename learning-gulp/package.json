@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "gulp": "^3.8.1",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-build": "^0.5.3",
+    "gulp-changed": "^0.4.0",
+    "gulp-compressor": "^0.1.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-define-module": "^0.1.1",
+    "gulp-handlebars": "^2.1.0",
+    "gulp-inline-source": "0.0.2",
+    "gulp-jade": "^0.6.0",
+    "gulp-ruby-sass": "^0.5.0",
+    "gulp-smoosher": "0.0.5"
+  }
+}

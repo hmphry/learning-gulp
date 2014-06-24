@@ -1,0 +1,63 @@
+easy-compressor
+=====
+easy-compressor is a tool can minify html,js and css very easy.
+
+html minify is use [htmlcompressor](https://code.google.com/p/htmlcompressor/),all configs are valid.
+
+css and js minify is use [yuicompressor](http://yui.github.io/yuicompressor/),all configs are valid too.
+
+## How To Use
+
+    var compressor = require('easy-compressor');
+    var path = require('path');
+    var fs = require('fs');
+
+    // minify html by path
+    compressor(path.join(__dirname, './index.html'), {
+        'remove-intertag-spaces': true,
+        'simple-bool-attr': true,
+        'compress-js': true,
+        'compress-css': true,
+        'output': path.join(__dirname,'./xx.html')
+    }, function (err) {
+        console.log('minify done');
+    });
+
+    // minify js by string
+    var js = fs.readFileSync('./run.js').toString();
+    compressor(js, {
+        'fromString': true,
+        'type': 'js',
+        'line-break': 80
+    }, function (err, code) {
+        console.log(code);
+    });
+
+    // minify js by path
+    var jsPath = path.join(__dirname, './run.js');
+    compressor(jsPath, {
+        'type': 'js',
+        'line-break': 80,
+        'o': path.join(__dirname,'./xx.js')
+    }, function (err) {
+        console.log('minify done');
+    });
+
+    // minify css by string
+    var css = fs.readFileSync('./style.css').toString();
+    compressor(css, {
+        'fromString': true,
+        'type': 'css',
+        'line-break': 80
+    }, function (err, code) {
+        console.log(code);
+    });
+
+    // minify css by path
+    var cssPath = path.join(__dirname, './style.css');
+    compressor(cssPath, {
+        'type': 'css',
+        'line-break': 80
+    }, function (err, code) {
+        console.log(code);
+    });

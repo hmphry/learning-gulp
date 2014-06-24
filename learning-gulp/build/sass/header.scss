@@ -1,0 +1,189 @@
+/* @group Page Top */
+    #page-top{
+        position: relative;
+        z-index: 2;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-bottom: 5px solid lighten($alt-color, 10);
+        overflow: hidden;
+        background: #fff;
+    }
+    /* @group Top Page Title */
+    #page-title-ctn{
+        @extend .grid;
+        @extend .center;
+        z-index: 2;
+        h1{
+            margin: 0 0 rem(20px);
+            color: $main-color;
+            font-family: font-type(title);
+            font-size: em(90px);
+            @include font-smoothing(yes);
+            font-weight: 400;
+            letter-spacing: .1em;
+            line-height: 1em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h2{
+            margin: 0 0 rem(10px);
+            color: $alt-color;
+            font-family: font-type(body);
+            font-size: em(30px);
+            @include font-smoothing(yes);
+            font-weight: 700;
+            letter-spacing: .1em;
+            line-height: 1em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    /* @endTop page Title */
+    /* @group Factory Drawing */
+    .factory{
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+        display: block;
+        height: rem(155px);
+        width: 100%;
+        .smoke-stacks{
+            position: absolute;
+            top: - rem(100px);
+            left: 50%;
+            margin-left: - rem(316px)/2;
+            z-index: 1;
+            display: block;
+            height: rem(105px);
+            width: rem(316px);
+            .smoke-stack{
+                position: relative;
+                display: block;
+                height: rem(105px);
+                width: rem(45px);
+                margin: 0 rem(5px);
+                float: left;
+                z-index: 300;
+                animation: stackAni 3s infinite;
+                svg{
+                    position: relative;
+                    z-index: 3;
+                    background: #fff;
+                }
+                &:before,
+                &:after{
+                    content:"";
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 8px;
+                    display: block;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    background: #DEDEDD;
+                    animation: smokeAni 3s infinite;
+                }
+                &:after{
+                    top: 30px;
+                    left: 12px;
+                    height: 20px;
+                    width: 20px;
+                    animation: smokeAni2 3s infinite;
+                }
+            }
+            .smoke-stack:nth-child(1){
+                animation-delay: -1s;
+                &:before{
+                    animation-delay: -1s;
+                }
+                &:after{
+                    animation-delay: 0s;
+                }
+            }
+            .smoke-stack:nth-child(2){
+                &:after{
+                    animation-delay: 1s;
+                }
+            }
+            .smoke-stack:nth-child(3){
+                animation-delay: 1s;
+                &:before{
+                    animation-delay: 1s;
+                }
+                &:after{
+                    animation-delay: 2s;
+                }
+            }
+        }
+        .factory-body{
+            position: absolute;
+            left: 50%;
+            margin-left: - rem(316px)/2;
+            z-index: 2;
+            display: block;
+            height: rem(155px);
+            width: rem(316px);
+            background: $white;
+            animation: factoryAni 9s infinite;
+        }
+        .truck-ctn{
+            position: absolute;
+            bottom: rem(4px);
+            left: 0;
+            display: block;
+            height: rem(45px);
+            width: 100%;
+            .truck{
+                position: absolute;
+                left: - rem(155px);
+                display: block;
+                height: rem(45px);
+                width: rem(155px);
+                animation: truckAni 9s linear infinite;
+                path{
+                    animation: truckSvgAni 9s linear infinite;
+                }
+            }
+        }
+    }
+
+    @keyframes stackAni {
+        0% { transform: translateY(0) }
+        50% { transform: translateY(40px) }
+        100% { transform: translateY(0) }
+    }
+    @keyframes smokeAni {
+        0% { transform: translateY(0); opacity: 1; }
+        40% { opacity: 1; }
+        80% { opacity: 0; }
+        100% { transform: translateY(-80px); opacity: 0; }
+    }
+    @keyframes smokeAni2 {
+        0% { transform: translateY(0); opacity: 1; }
+        40% { opacity: 1; }
+        60% { opacity: 0; }
+        100% { transform: translateY(-100px); opacity: 0; }
+    }
+    @keyframes factoryAni {
+        30% { transform: scale(1); }
+        50% { transform: scale(1.03); }
+        70% { transform: scale(1); }
+    }
+    @keyframes truckAni {
+        0% { left: - rem(155px); }
+        40% { left: 50%; }
+        55% { left: 50%; }
+        70% { left: 100%; }
+        100% { left: 100%; }
+    }
+    @keyframes truckSvgAni {
+        0% { fill: lighten($alt-color, 10); }
+        40% { fill: lighten($alt-color, 10); }
+        41% { fill: $main-color; }
+        100% { fill: $main-color; }
+    }
+    /* @end */
+/* @end Page Top */

@@ -1,0 +1,30 @@
+var fs = require('fs');
+var path = require('path');
+var exec = require('child_process').exec;
+
+var jarPath = path.join(__dirname, './jars/htmlcompressor-1.5.3.jar');
+var yuiJarPath = path.join(__dirname, './jars/yuicompressor.jar');
+var tmpPath = path.join(__dirname, './tmp/tmp');
+
+module.exports = function (path, opt, callback) {
+    if (opt.fromString) {
+        fs.writeFileSync(tmpPath, path);
+        path = tmpPath;
+        delete opt.fromString;
+    }
+    var args = ['java', '-jar'];
+
+    var isUserYui = opt.type && /^js|css$/i.test(opt.type);
+    args.push(isUserYui ? yuiJarPath : jarPath);
+
+    for (var i in opt) {
+        args.push((i.length === 1 ? '-' : '--') + i);
+        if ('boolean' !== typeof opt[i]) {
+            args.push(opt[i]);
+        }
+    }
+
+    args.push(path);
+
+    exec(args.join(' '), callback);
+};

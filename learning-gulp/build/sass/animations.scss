@@ -1,0 +1,206 @@
+.article-animation{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: rem(372px);
+    border: solid lighten($alt-color, 10);
+    border-width: rem(5px) 0;
+    margin: 0 0 rem(20px);
+    overflow: hidden
+}
+.present-box{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    display: block;
+    height: 82px;
+    width: 66px;
+    margin-left: -33px;
+    background: #fff;
+}
+#plugin-animation{
+    @extend .article-animation;
+    .stand{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        height: 118px;
+        width: 90px;
+        margin-left: -45px;
+    }
+    .box{
+        @extend .present-box;
+        .plugins-ribbon{
+            animation: pluginColorAni 3s linear infinite;
+        }
+        path{
+            animation: pluginColorAni 3s linear infinite;
+        }
+    }
+    .changer{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        height: 128px;
+        width: 28px;
+        margin-left: -14px;
+        path{
+            animation: pluginColorAni 3s linear infinite;
+        }
+    }
+}
+@keyframes pluginColorAni {
+    0% { fill: #DEDEDD; }
+    35% { fill: #DEDEDD; }
+    40% { fill: #E94C4F; }
+    45% { fill: #DEDEDD; }
+    50% { fill: #E94C4F; }
+    55% { fill: #DEDEDD; }
+    60% { fill: #E94C4F; }
+    65% { fill: #DEDEDD; }
+    100% { fill: #DEDEDD; }
+}
+@keyframes pluginOpacityAni {
+    0% { opacity: 0; }
+    35% { opacity: 0; }
+    40% { opacity: 1; }
+    45% { opacity: 0; }
+    50% { opacity: 1; }
+    55% { opacity: 0; }
+    60% { opacity: 1; }
+    65% { opacity: 0; }
+    100% { opacity: 0; }
+}
+#streams-animation{
+    @extend .article-animation;
+    .belt{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        height: 124px;
+        width: 418px;
+        margin-left: -209px;
+    }
+    .box{
+        @extend .present-box;
+        bottom: 124px;
+        margin-left: -178px;
+        animation: streamsBoxAni 3s linear infinite;
+        path{
+        }
+    }
+}
+@keyframes streamsBoxAni {
+    0% { opacity: 0; margin-left: -178px; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; margin-left: 112px; }
+}
+#task-animation{
+    @extend .article-animation;
+    .belt{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: 5;
+        display: block;
+        height: 124px;
+        width: 418px;
+        margin-left: -240px;
+    }
+    .box{
+        @extend .present-box;
+        margin-left: -184px;
+        top: -17px;
+        animation: tasksBoxAni 6s linear infinite;
+        path{
+            fill: #DEDEDD;
+            animation: tasksColorAni2 6s linear infinite;
+        }
+    }
+    .port{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        height: 82px;
+        width: 88px;
+        margin-left: -195px;
+        background: #fff;
+        &#port-2{
+            top: auto;
+            bottom: 0;
+            transform: rotate(180deg);
+            margin-left: 180px;
+            path, polygon{
+                fill: $main-color;
+            }
+            &:before{
+                content: "";
+                display: block;
+                width: 20px;
+                height: 100%;
+                background: #333;
+                position: absolute;
+                left: 88px;
+                background: #FFFFFF;
+            }
+        }
+    }
+    .changer{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        height: 128px;
+        width: 28px;
+        margin-left: -14px;
+        path{
+            animation: tasksColorAni 6s linear infinite;
+        }
+    }
+}
+
+@keyframes tasksBoxAni {
+    0% { top: -17px; }
+    4% { top: 156px; margin-left: -184px; }
+    5% { top: 146px; }
+    6% { top: 156px; }
+    7% { top: 150px; }
+    8% { top: 156px; }
+    30% { top: 156px; margin-left: -33px; }
+    56% { top: 156px; margin-left: -33px; }
+    91% { top: 156px;}
+    92% { transform: rotate(0);}
+    96% {   top: 166px;}
+    100% { top: 280px; margin-left: 192px; transform: rotate(40deg); }
+}
+@keyframes tasksColorAni {
+    0% { fill: #DEDEDD; }
+    42% { fill: #DEDEDD; }
+    44% { fill: $main-color; }
+    46% { fill: #DEDEDD; }
+    48% { fill: $main-color; }
+    50% { fill: #DEDEDD; }
+    52% { fill: $main-color; }
+    54% { fill: #DEDEDD; }
+    56% { fill: $main-color; }
+    58% { fill: #DEDEDD; }
+    100% { fill: #DEDEDD; }
+}
+@keyframes tasksColorAni2 {
+    0% { fill: #DEDEDD; }
+    42% { fill: #DEDEDD; }
+    44% { fill: $main-color; }
+    46% { fill: #DEDEDD; }
+    48% { fill: $main-color; }
+    50% { fill: #DEDEDD; }
+    52% { fill: $main-color; }
+    54% { fill: #DEDEDD; }
+    56% { fill: $main-color; }
+    58% { fill: $main-color; }
+    100% { fill: $main-color; }
+}

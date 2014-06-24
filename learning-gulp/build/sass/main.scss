@@ -1,0 +1,82 @@
+/*# sourceMappingURL=main.css.map */
+/* @group Sass Stuff */
+    // Variables
+    $width: 960px;
+    $font-title: "ltc-bodoni-175", serif;
+    $font-body: "proxima-nova", sans-serif;
+    $font-code: "source-code-pro", sans-serif;
+    $font-size: 16px;
+    $white: #FFF;
+    $o-white: #F8F8F8;
+    $black: #555;
+    $main-color: #E94C4F;
+    $alt-color: #BBBDBF;
+// Functions
+    // px to em
+    @function em($target, $context: $font-size) {
+       @if $target == 0 { @return 0 }
+       @return $target / $context + 0em;
+    }
+    // px to rem
+    @function rem($target, $context: $font-size) {
+       @if $target == 0 { @return 0 }
+       @return $target / $context + 0rem;
+    }
+    // font type
+    @function font-type($type) {
+        @if $type == title {
+            @return $font-title;
+        } @else if $type == body {
+            @return $font-body;
+        } @else if $type == code {
+            @return $font-code;
+        } @else if $type == icons {
+            @return $font-icons;
+        }
+    }
+// Mixins
+    // Font Smoothing
+    @mixin font-smoothing($value: antialiased) {
+        @if $value == yes{
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        @else {
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: auto;
+        }
+    }
+/* @end Sass Start */
+/* @group Global Styles */
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    body{
+        @extend html;
+        color: $black;
+        background: $white;
+        font-family: font-type(body);
+        opacity: 0;
+        overflow: hidden;
+        .loaded &{
+            opacity: 1;
+            transition: opacity 1s;
+            overflow: visible;
+        }
+    }
+    a{
+        color: $black;
+        text-decoration: underline;
+    }
+/* @end Global Styles */
+
+@import "grid";
+@import "header";
+@import "animations";
+@import "page-content";

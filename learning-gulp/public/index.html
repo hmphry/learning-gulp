@@ -1,0 +1,524 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+    <head>
+        <title>Learning Gulp: Getting started with the Front End Factory</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <script type="text/javascript" src="//use.typekit.net/rif2lvo.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body>
+        <!-- Begin Header -->
+    	<header id="page-top">
+            <div id="page-title-ctn">
+                <h1>Learning Gulp</h1>
+                <h2>Getting Started</h2>
+                <h2>with the Front End Factory</h2>
+            </div>
+            <div id="drawing-ctn">
+                <div class="factory">
+                    <div class="smoke-stacks">
+                        <div class="smoke-stack">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 105" enable-background="new 0 0 45 105" xml:space="preserve">
+                                <path fill="#DEDEDD" d="M45,105H0L6.3,0h32.5L45,105z M5.3,100h34.5L34.1,5H10.9L5.3,100z"/>
+                            </svg>
+                        </div>
+                        <div class="smoke-stack">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 105" enable-background="new 0 0 45 105" xml:space="preserve">
+                                <path fill="#DEDEDD" d="M45,105H0L6.3,0h32.5L45,105z M5.3,100h34.5L34.1,5H10.9L5.3,100z"/>
+                            </svg>
+                        </div>
+                        <div class="smoke-stack">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 105" enable-background="new 0 0 45 105" xml:space="preserve">
+                                <path fill="#DEDEDD" d="M45,105H0L6.3,0h32.5L45,105z M5.3,100h34.5L34.1,5H10.9L5.3,100z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="factory-body">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 316 155" enable-background="new 0 0 316 155" xml:space="preserve">
+                            <g>
+                                <path fill="#DEDEDD" d="M0-0.1v155.2h316V-0.1H0z M311,150.1H5V4.9h306V150.1z"/>
+                                <path fill="#DEDEDD" d="M215.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M210.5,25.9v74h-15v-74h0.2l-0.2-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H210.5z"/>
+                                <path fill="#DEDEDD" d="M245.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M240.5,25.9v74h-15v-74h0.2l-0.2-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H240.5z"/>
+                                <path fill="#DEDEDD" d="M275.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M270.5,25.9v74h-15v-74h0.2l-0.2-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H270.5z"/>
+                                <path fill="#DEDEDD" d="M305.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M300.5,25.9v74h-15v-74h0.2l-0.2-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H300.5z"/>
+                                <path fill="#DEDEDD" d="M95.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M90.5,25.9v74h-15v-74h0.2l-0.1-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H90.5z"/>
+                                <path fill="#DEDEDD" d="M125.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M120.5,25.9v74h-15v-74h0.2l-0.1-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H120.5z"/>
+                                <path fill="#DEDEDD" d="M155.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M150.5,25.9v74h-15v-74h0.2l-0.1-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H150.5z"/>
+                                <path fill="#DEDEDD" d="M185.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M180.5,25.9v74h-15v-74h0.2l-0.2-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H180.5z"/>
+                                <path fill="#DEDEDD" d="M35.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M30.5,25.9v74h-15v-74h0.2l-0.1-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H30.5z"/>
+                                <path fill="#DEDEDD" d="M65.5,23.4l0-0.3c0-0.1,0-0.1,0-0.2c0-0.2,0-0.3,0-0.5l0-1.5h-0.1c-1-5.9-6.1-10.5-12.3-10.5
+                                    s-11.4,4.6-12.3,10.5h-0.2v84h25V23.4z M60.5,25.9v74h-15v-74h0.2l-0.1-2.8c0-0.1,0-0.1,0-0.2c0-4.1,3.4-7.5,7.5-7.5
+                                    s7.5,3.4,7.5,7.5c0,0.1,0,0.1,0,0.2l-0.1,2.8H60.5z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="truck-ctn">
+                        <div class="truck">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 155 45" enable-background="new 0 0 155 45" xml:space="preserve">
+                            <path fill="#DEDEDD" d="M155,15h-20V0h-25v30h-5V0H0v35h0.4C0.2,35.8,0,36.6,0,37.5C0,41.6,3.4,45,7.5,45c1.9,0,3.7-0.7,5-1.9
+                                c1.3,1.2,3.1,1.9,5,1.9s3.7-0.7,5-1.9c1.3,1.2,3.1,1.9,5,1.9c4.1,0,7.5-3.4,7.5-7.5c0-0.9-0.2-1.7-0.4-2.5h23.6h32.3
+                                c-0.3,0.8-0.4,1.6-0.4,2.5c0,4.1,3.4,7.5,7.5,7.5c1.9,0,3.7-0.7,5-1.9c1.3,1.2,3.1,1.9,5,1.9c4.1,0,7.5-3.4,7.5-7.5
+                                c0-0.9-0.2-1.7-0.4-2.5h7.9h7.5h5h5.4c-0.3,0.8-0.4,1.6-0.4,2.5c0,4.1,3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5c0-0.9-0.2-1.7-0.4-2.5h0.4
+                                V15z M7.5,40C6.1,40,5,38.9,5,37.5S6.1,35,7.5,35s2.5,1.1,2.5,2.5S8.9,40,7.5,40z M17.5,40c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5
+                                s2.5,1.1,2.5,2.5S18.9,40,17.5,40z M30,37.5c0,1.4-1.1,2.5-2.5,2.5S25,38.9,25,37.5s1.1-2.5,2.5-2.5S30,36.1,30,37.5z M5,30V5h95v25
+                                H58.2H5z M97.5,40c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5S98.9,40,97.5,40z M107.5,40c-1.4,0-2.5-1.1-2.5-2.5
+                                s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5S108.9,40,107.5,40z M130,30h-7.5H115V5h15v10V30z M135,20h15v10h-15V20z M150,37.5
+                                c0,1.4-1.1,2.5-2.5,2.5s-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5S150,36.1,150,37.5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</header>
+        <!-- End Header -->
+        <!-- Begin Content -->
+        <div class="text-section">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#getting-started">Getting Started</a>
+                        <ul>
+                            <li><a href="#getting-started-1">What is gulp?</a></li>
+                            <li><a href="#getting-started-2">Installation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#gulp-basics">Gulp Basics</a>
+                        <ul>
+                            <li><a href="#gulp-basics-1">Plugins</a></li>
+                            <li><a href="#gulp-basics-2">Streams</a></li>
+                            <li><a href="#gulp-basics-3">Tasks</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#using-gulp">Using Gulp</a>
+                        <ul>
+                            <li><a href="#using-gulp-1">Create A project</a></li>
+                            <li><a href="#using-gulp-2">devDependencies</a></li>
+                            <li><a href="#using-gulp-3">Plugins and Tasks</a></li>
+                            <li><a href="#using-gulp-4">Running Gulp</a></li>
+                            <li><a href="#using-gulp-5">Super Tasks</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#bonus">Bonus</a>
+                        <ul>
+                            <li><a href="#bonus-1">Gulp watch</a></li>
+                            <li><a href="#bonus-2">All files</a></li>
+                            <li><a href="#bonus-3">Usings tasks as dependencies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#plugins">Useful Plugins</a></li>
+                    <li><a href="#colophon">Colophon</a></li>
+                </ul>
+            </div>
+            <article class="page-text">
+                <section class="page-section">
+                    <h1 id="getting-started">Getting Started With Gulp</h1>
+                    <h2 id="getting-started-1">What is Gulp?</h2>
+                    <p>Gulp is an automatic task runner, or build system, written in node.js and can handle many workflow tasks. <a href="http://david.nowinsky.net/gulp-book/">In his git-book</a>, David Nowinsky described Gulp as a factory. I really like this description. Gulp, much like a factory, takes files and turns them into other files.</p>
+                    <p>You might question why this is needed, and to some it might not be. If you’re working on a simple site written in pure CSS, then it most likely not needed. However, if you’re doing a lot of mundane tasks, you could benefit from using Gulp. Build systems can watch files for changes, compile to CSS or Javascript, upload files to servers, optimize images, concatenate, minify, and much more.</p>
+                    <h2 id="getting-started-2">Installation</h2>
+                    <p>Installation for mac is pretty simple, however there are a few dependencies. First off, you will need to install <a href="http://nodejs.org">node.js</a>. Once you've ran through the installation process for node.js, we will install the Node Package Manager, or NPM, through the Console. Open the console and type <span class="term-bit">curl -L https://npmjs.org/install.sh | sh</span> after the <span class="term-bit">$</span>. You will have to install NPM as a root user, so you will probably have to throw <span class="term-bit">sudo</span> in front of that command. Once you have Node and NPM ready, run <span class="term-bit">npm install -g gulp</span> to install <a href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started">Gulp</a> globally.</p>
+                </section>
+                <section class="page-section">
+                    <h1 id="gulp-basics">Gulp Basics</h1>
+                    <h2 id="gulp-basics-1">Plugins</h2>
+                    <div id="plugin-animation">
+                        <!-- Stand -->
+                        <div class="stand">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 118" enable-background="new 0 0 90 118" xml:space="preserve">
+                                <path fill="#DDDDDC" d="M90,16.7C90,5.8,66.8,0,45,0C23.2,0,0,5.8,0,16.7c0,0,0,0,0,0.1h0V118h5V24.6c8,5.7,24.3,8.7,40,8.7 c15.7,0,32-3,40-8.7V118h5V16.7L90,16.7C90,16.7,90,16.7,90,16.7z M45,28.3c-24.8,0-40-6.8-40-11.7S20.2,5,45,5 c24.8,0,40,6.8,40,11.7S69.8,28.3,45,28.3z"/>
+                            </svg>
+                        </div>
+                        <!-- /Stand -->
+                        <!-- Box -->
+                        <div class="box">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 66 82.2" enable-background="new 0 0 66 82.2" xml:space="preserve">
+                                <g>
+                                    <path fill="#DEDEDD" d="M0,22v60.2h66V22H0z M60.9,27.1v10.2H5.1V27.1H60.9z M5.1,77.2V42.4h55.8v34.8H5.1z"/>
+                                    <path fill="#DEDEDD" class="plugins-ribbon" d="M59.5,6.4c0,6.6-5.5,12.3-13.2,14.6c0.9-1.1,1.7-2.4,2.4-3.8c3.2-6.7,2.2-13.9-2.2-16.3 c-1-0.5-2.1-0.8-3.2-0.8C39.4,0,35.5,2.9,33,7.5C30.5,2.9,26.6,0,22.8,0c-1.2,0-2.3,0.3-3.2,0.8c-4.4,2.4-5.4,9.6-2.2,16.3 c0.7,1.4,1.5,2.7,2.4,3.9C12,18.8,6.4,13.1,6.4,6.4H1.3c0,11.4,11.5,20.7,25.6,20.7c2,0,4.1-0.2,6-0.6c2,0.4,4,0.6,6,0.6 c14.1,0,25.6-9.3,25.6-20.7H59.5z M37.1,10.8c1.7-3.7,4.4-5.7,6.1-5.7c0.3,0,0.6,0.1,0.8,0.2c1.5,0.9,2.3,5,0.1,9.7c0,0,0,0,0,0.1 c-1.9,2.2-4.4,3.9-7.3,5.1C35.5,18.8,35,15,37.1,10.8z M22,5.3c0.2-0.1,0.5-0.2,0.8-0.2c1.7,0,4.4,2,6.1,5.7c2,4.3,1.6,8.1,0.3,9.4 c-2.8-1.2-5.3-2.8-7.1-4.9C22.1,15.2,22,15.1,22,15C19.7,10.2,20.5,6.1,22,5.3z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <!-- /Box -->
+                        <!-- Changer -->
+                        <div class="changer">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 122" enable-background="new 0 0 27 122" xml:space="preserve">
+                                <path fill="#DEDEDD" d="M16,95.2V-0.5h-5v95.7c-6.3,1.2-11,6.7-11,13.3c0,7.4,6.1,13.5,13.5,13.5c7.4,0,13.5-6.1,13.5-13.5 C27,101.9,22.3,96.4,16,95.2z M13.5,117c-4.7,0-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5c4.7,0,8.5,3.8,8.5,8.5S18.2,117,13.5,117z"/>
+                            </svg>
+                        </div>
+                        <!-- /Changer -->
+                    </div>
+                    <p>Plugins extend the functionality of Gulp. Gulp's beleive is that plugins should only perform one action, this way it is easy to combine plugins to create complicated functionality easily. All approved plugins are listing on <a href="http://gulpjs.com/plugins/">Gulp's plugin page</a>. Gulp curates their plugins to ensure high quality. It's suggested you use the official Gulp plugin database to ensure you do not use harmful or non-working plugins.</p>
+                    <h2 id="gulp-basics-2">Streams</h2>
+                    <div id="streams-animation">
+                        <!-- Box -->
+                        <div class="box">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 66 82.2" enable-background="new 0 0 66 82.2" xml:space="preserve">
+                                <g>
+                                    <path fill="#DEDEDD" d="M0,22v60.2h66V22H0z M60.9,27.1v10.2H5.1V27.1H60.9z M5.1,77.2V42.4h55.8v34.8H5.1z"/>
+                                    <path fill="#DEDEDD" class="plugins-ribbon" d="M59.5,6.4c0,6.6-5.5,12.3-13.2,14.6c0.9-1.1,1.7-2.4,2.4-3.8c3.2-6.7,2.2-13.9-2.2-16.3 c-1-0.5-2.1-0.8-3.2-0.8C39.4,0,35.5,2.9,33,7.5C30.5,2.9,26.6,0,22.8,0c-1.2,0-2.3,0.3-3.2,0.8c-4.4,2.4-5.4,9.6-2.2,16.3 c0.7,1.4,1.5,2.7,2.4,3.9C12,18.8,6.4,13.1,6.4,6.4H1.3c0,11.4,11.5,20.7,25.6,20.7c2,0,4.1-0.2,6-0.6c2,0.4,4,0.6,6,0.6 c14.1,0,25.6-9.3,25.6-20.7H59.5z M37.1,10.8c1.7-3.7,4.4-5.7,6.1-5.7c0.3,0,0.6,0.1,0.8,0.2c1.5,0.9,2.3,5,0.1,9.7c0,0,0,0,0,0.1 c-1.9,2.2-4.4,3.9-7.3,5.1C35.5,18.8,35,15,37.1,10.8z M22,5.3c0.2-0.1,0.5-0.2,0.8-0.2c1.7,0,4.4,2,6.1,5.7c2,4.3,1.6,8.1,0.3,9.4 c-2.8-1.2-5.3-2.8-7.1-4.9C22.1,15.2,22,15.1,22,15C19.7,10.2,20.5,6.1,22,5.3z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <!-- /Box -->
+                        <!-- Belt -->
+                        <div class="belt">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 418 124" enable-background="new 0 0 418 124" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M401,34.1H17c-9.4,0-17-7.7-17-17.1S7.6,0,17,0h384c9.4,0,17,7.7,17,17.1S410.4,34.1,401,34.1z M17,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12h384c6.6,0,12-5.4,12-12s-5.4-12-12-12H17z"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M17,34.1c-9.4,0-17-7.7-17-17.1S7.6,0,17,0s17,7.7,17,17.1S26.4,34.1,17,34.1z M17,5c-6.6,0-12,5.4-12,12 s5.4,12,12,12s12-5.4,12-12S23.6,5,17,5z"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M401,34.1c-9.4,0-17-7.7-17-17.1S391.6,0,401,0s17,7.7,17,17.1S410.4,34.1,401,34.1z M401,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S407.6,5,401,5z"/>
+                                    </g>
+                                    <g>
+                                        <rect x="398.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                    <g>
+                                        <rect x="14.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M114,34.1c-9.4,0-17-7.7-17-17.1S104.6,0,114,0s17,7.7,17,17.1S123.4,34.1,114,34.1z M114,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S120.6,5,114,5z"/>
+                                    </g>
+                                    <g>
+                                        <rect x="111.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M210,34.1c-9.4,0-17-7.7-17-17.1S200.6,0,210,0s17,7.7,17,17.1S219.4,34.1,210,34.1z M210,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12c6.6,0,12-5.4,12-12S216.6,5,210,5z"/>
+                                    </g>
+                                    <g>
+                                        <rect x="207.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M306,34.1c-9.4,0-17-7.7-17-17.1S296.6,0,306,0s17,7.7,17,17.1S315.4,34.1,306,34.1z M306,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S312.6,5,306,5z"/>
+                                    </g>
+                                    <g>
+                                        <rect x="303.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <!-- /Belt -->
+                    </div>
+                    <p>Gulp uses streams to link programs, or in this case plugins, together. This relieves your system of temporary files while providing blazing fast functionality. Going back to David Nowinsky's factory analogy, they are the conveyerbelts, moving from one program to the other.</p>
+                    <h2 id="gulp-basics-3">Tasks</h2>
+                    <div id="task-animation">
+                        <!-- Box -->
+                        <div class="box">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 66 82.2" enable-background="new 0 0 66 82.2" xml:space="preserve">
+                                <g>
+                                    <path fill="#DEDEDD" d="M0,22v60.2h66V22H0z M60.9,27.1v10.2H5.1V27.1H60.9z M5.1,77.2V42.4h55.8v34.8H5.1z"/>
+                                    <path fill="#DEDEDD" class="plugins-ribbon" d="M59.5,6.4c0,6.6-5.5,12.3-13.2,14.6c0.9-1.1,1.7-2.4,2.4-3.8c3.2-6.7,2.2-13.9-2.2-16.3 c-1-0.5-2.1-0.8-3.2-0.8C39.4,0,35.5,2.9,33,7.5C30.5,2.9,26.6,0,22.8,0c-1.2,0-2.3,0.3-3.2,0.8c-4.4,2.4-5.4,9.6-2.2,16.3 c0.7,1.4,1.5,2.7,2.4,3.9C12,18.8,6.4,13.1,6.4,6.4H1.3c0,11.4,11.5,20.7,25.6,20.7c2,0,4.1-0.2,6-0.6c2,0.4,4,0.6,6,0.6 c14.1,0,25.6-9.3,25.6-20.7H59.5z M37.1,10.8c1.7-3.7,4.4-5.7,6.1-5.7c0.3,0,0.6,0.1,0.8,0.2c1.5,0.9,2.3,5,0.1,9.7c0,0,0,0,0,0.1 c-1.9,2.2-4.4,3.9-7.3,5.1C35.5,18.8,35,15,37.1,10.8z M22,5.3c0.2-0.1,0.5-0.2,0.8-0.2c1.7,0,4.4,2,6.1,5.7c2,4.3,1.6,8.1,0.3,9.4 c-2.8-1.2-5.3-2.8-7.1-4.9C22.1,15.2,22,15.1,22,15C19.7,10.2,20.5,6.1,22,5.3z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <!-- /Box -->
+                        <!-- Belt -->
+                        <div class="belt">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 418 124" enable-background="new 0 0 418 124" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M401,34.1H17c-9.4,0-17-7.7-17-17.1S7.6,0,17,0h384c9.4,0,17,7.7,17,17.1S410.4,34.1,401,34.1z M17,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12h384c6.6,0,12-5.4,12-12s-5.4-12-12-12H17z"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M17,34.1c-9.4,0-17-7.7-17-17.1S7.6,0,17,0s17,7.7,17,17.1S26.4,34.1,17,34.1z M17,5c-6.6,0-12,5.4-12,12 s5.4,12,12,12s12-5.4,12-12S23.6,5,17,5z"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M401,34.1c-9.4,0-17-7.7-17-17.1S391.6,0,401,0s17,7.7,17,17.1S410.4,34.1,401,34.1z M401,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S407.6,5,401,5z"/>
+                                    </g>
+                                    <g>
+                                        <rect x="398.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                    <g>
+                                        <rect x="14.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M114,34.1c-9.4,0-17-7.7-17-17.1S104.6,0,114,0s17,7.7,17,17.1S123.4,34.1,114,34.1z M114,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S120.6,5,114,5z"/>
+                                    </g>
+                                    <g>
+                                        <rect x="111.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M210,34.1c-9.4,0-17-7.7-17-17.1S200.6,0,210,0s17,7.7,17,17.1S219.4,34.1,210,34.1z M210,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12c6.6,0,12-5.4,12-12S216.6,5,210,5z"/>
+                                    </g>
+                                    <g>
+                                        <rect x="207.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M306,34.1c-9.4,0-17-7.7-17-17.1S296.6,0,306,0s17,7.7,17,17.1S315.4,34.1,306,34.1z M306,5 c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S312.6,5,306,5z"/>
+                                    </g>
+                                    <g>
+                                        <rect x="303.5" y="17.1" fill="#DEDEDD" width="5" height="106.9"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <!-- /Belt -->
+                        <!-- Port 1 -->
+                        <div id="port-1" class="port">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 88 82" enable-background="new 0 0 88 82" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <polygon fill="#DEDEDD" points="76.5,22.4 11.5,22.4 11.5,0 16.5,0 16.5,17.4 71.5,17.4 71.5,0 76.5,0 		"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M76.5,42.2H11.5V17.4h64.9V42.2z M16.5,37.3h54.9V22.4H16.5V37.3z"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M76.5,62.1H11.5V37.3h64.9V62.1z M16.5,57.2h54.9V42.2H16.5V57.2z"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M88,82H0l12.5-24.8h63L88,82z M8.1,77h71.8l-7.5-14.9H15.6L8.1,77z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <!-- /Port 1 -->
+                        <!-- Port 1 -->
+                        <div id="port-2" class="port">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 88 82" enable-background="new 0 0 88 82" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <polygon fill="#DEDEDD" points="76.5,22.4 11.5,22.4 11.5,0 16.5,0 16.5,17.4 71.5,17.4 71.5,0 76.5,0 		"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M76.5,42.2H11.5V17.4h64.9V42.2z M16.5,37.3h54.9V22.4H16.5V37.3z"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M76.5,62.1H11.5V37.3h64.9V62.1z M16.5,57.2h54.9V42.2H16.5V57.2z"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#DEDEDD" d="M88,82H0l12.5-24.8h63L88,82z M8.1,77h71.8l-7.5-14.9H15.6L8.1,77z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <!-- /Port 1 -->
+                        <!-- Changer -->
+                        <div class="changer">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 122" enable-background="new 0 0 27 122" xml:space="preserve">
+                                <path fill="#DEDEDD" d="M16,95.2V-0.5h-5v95.7c-6.3,1.2-11,6.7-11,13.3c0,7.4,6.1,13.5,13.5,13.5c7.4,0,13.5-6.1,13.5-13.5 C27,101.9,22.3,96.4,16,95.2z M13.5,117c-4.7,0-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5c4.7,0,8.5,3.8,8.5,8.5S18.2,117,13.5,117z"/>
+                            </svg>
+                        </div>
+                        <!-- /Changer -->
+                    </div>
+                    <p>Tasks are how you control Gulp and are defined with <span class="code-bit">gulp.task</span> function. Tasks can do many things, including interacting with plugins and streams. You can link tasks together and create dependencies. If streams are the conveyour belt, then tasks are the assembly line.</p>
+                </section>
+                <section class="page-section">
+                    <h1 id="using-gulp">Using Gulp</h1>
+                    <p>Now that you have your feet wet in Gulp, it's time to start using it. We will mostly be using the console for this part, however feel free to open and edit code in your favorite text editor.</p>
+                    <h2 id="using-gulp-1">Creating a Project</h2>
+                    <p>First things first, we're going to need a new project. In your console, enter the following to create a new project folder <span class="term-bit">mkdir my_gulp_project</span>. This will create a folder inside your home directory. mkdir stands for "make directory", or folder. To open that directory inside the console, we're going to use the cd, or "change directory", command. Type the following <span class="term-bit">cd my_gulp_project</span>.</p>
+                    <p>Once inside my_gulp_project, we're going to use the "npm init" to create our devDependencies. This command will create a package.json file and a node_modules directory. These are important when sharing our project. If the devDependencies are up to date, a fellow developer would only need to download your package.json file and type <span class="term-bit">npm install</span> into the terminal to download all of the plugins used with this project. You should never update the package.json file or the node_modules directory. That is NPM's job. So, without further adu, type <span class="term-bit">npm init</span> in your console. You'll get a few prompts asking for information, but none of it is required or important for us, so simply hit enter until they're gone.</p>
+                    <h2 id="using-gulp-2">devDependencies</h2>
+                    <p>I know what you're thinking. "I've already installed Gulp!", and you are correct. However, you've installed it globally and it's neccassary to include it inside your devDependencies. In your console, type in <span class="term-bit">npm install --save-dev gulp</span>. You should notice a difference from the Gulp install command you ran earlier, that being the addition of the "--save-dev" flag. This flag let's NPM know you'd like to save this as a dependency.</p>
+                    <p>Next, we're going to create a gulpfile.js inside of our directory. This file is how we will be telling Gulp what to do and when to do it. In your console, type <span class="term-bit">touch gulpfile.js</span>. The "touch" command will create the file. Now open gulpfile.js in your editor, and on line 1 paste the following: <span class="code-bit">var gulp = require('gulp');</span>.</p>
+                    <h2 id="using-gulp-3">Plugins and Tasks</h2>
+                    <p>We're going to use <a href="http://gulpjs.com/plugins/">Gulp's official plugins list</a> to find and install our first plugin. I like to code in SASS, so I will search for a SASS compiler. The query returned <a href="https://www.npmjs.org/package/gulp-ruby-sass/">gulp-ruby-sass</a>, which looks exactly like what I need. Gulp-ruby-sass does have a two dependencies, Ruby and SASS. If you're on a Mac, Ruby comes already installed! To install SASS, all you need to do is run <span class="term-bit">gem install sass</span> inside your console.</p>
+                    <p>Now that we have Ruby and SASS, it's time to install gulp-ruby-sass. Run <span class="term-bit">npm install --save-dev gulp-ruby-sass</span> in your console. This will install gulp-ruby-sass as a devDependency inside both package.json and node_modules. </p>
+                    <p>Open gulpfile.js and edit it until it looks like something below.</p>
+                    <div class="code">
+                        <div class="comment">// Requirements</div>
+                        <div>var gulp = require('gulp'),
+                            <div>sass = require('gulp-ruby-sass');</div>
+                        </div>
+                        <div class="comment">// Defines path to sass</div>
+                        <div>var sassRoot = 'build/sass/';</div>
+                        <div class="comment">// Gulp task</div>
+                        <div>gulp.task('sass-to-css', function(){
+                                <div>return gulp.src(sassRoot+'main.scss')
+                                    <div>.pipe(sass({sourcemap: true}))</div>
+                                    <div>.pipe(gulp.dest('public/css'));</div>
+                                </div>
+                            });
+                        </div>
+                    </div>
+                    <h3>Requirements</h3>
+                    <p>Requirements are basically just declaring your build systems dependencies. I won't get into this too much, as they're pretty self explanitory. If you do not include your plugin in your requirements, Gulp will not run it.</p>
+                    <h3>Defines path to sass</h3>
+                    <p>This is optionally and really just a personal preference. You do not have to declare variables like this for Gulp to work, I just think it's neat.</p>
+                    <h3>Gulp task</h3>
+                    <p>I mentioned Gulp tasks eariler, but I will go into detail here. Tasks are the assembly line of your factory. It will take the source, <span class="code-bit">return gulp.src(sassRoot+'main.scss')</span>, run it through streams, <span class="code-bit">.pipe(sass({sourcemap: true}))</span>, and the final product will arrive at the destination, <span class="code-bit">.pipe(gulp.dest('public/css'));</span>. As mentioned, you can link multiple plugins into a task to form super-tasks. That's not an official name, I just like it. Anyway, we will get more into this later on in the post.</p>
+                    <h2 id="using-gulp-4">Running Gulp</h2>
+                    <p>You can run this task by entering <span class="term-bit">gulp sass-to-css</span>, however since there isn't a SASS file, or even a SASS or build folder, this command will out put nothing. So, let's create those folders and files! In your console, write <span class="term-bit">mkdir -p build/sass</span>. You probably recognize mkdir, but you might not recognize the -p, or --parent, flag. Typically, mkdir will not make nested directories. The -p flag will tell it to make the parent directories as well. Once the directories are created, run <span class="term-bit">touch build/sass/main.scss</span> to create our SASS file. Now let's open main.scss in our favorite editor and insert the following:</p>
+                    <div class="code">
+                        <div class="comment">// Just a test</div>
+                        <div>body{
+                            <div>background: black;</div>
+                        }</div>
+                    </div>
+                    <p>Save the file and return back to the terminal. Now that we have the folder, file, and a simple code, let's run that Gulp command. Enter <span class="term-bit">gulp sass-to-css</span> and hit enter. If you did everything correctly, you should and output like below from the console:</p>
+                    <div class="term-code">
+                        <div>[16:33:57] Using gulpfile ~/projects/test/gulpfile.js</div>
+                        <div>[16:33:57] Starting 'sass-to-css'...</div>
+                        <div>[16:33:57] Finished 'sass-to-css' after 389 ms</div>
+                    </div>
+                    <p>Much of this output is abitrary, but the important part is the last line. It let's you know the Gulp task is finished. If you enter the <span class="term-bit">ls</span> command into your console, which stands for "list" and will list everything in the directory, you will notice there is now a "public" directory. Inside that public directory, there should be a css directory and inside that, there is a main.css file. Congrats, you've successfully ran a Gulp command!</p>
+                    <h2 id="using-gulp-5">Super tasks</h2>
+                    <p>Now that we have the basics down, let's create one of those super-tasks I mentioned before. Since we focused on CSS last time, let's stick with it. One thing I absolutely detest writing are vendor prefixes. They take my otherwise nice and simple code and turn it into a bloated monster. So, let's add an auto-prefixer to our workflow. by searching the Gulp plugin database, I've came accross the <a href="https://www.npmjs.org/package/gulp-autoprefixer/">gulp-autoprefixer</a>, which looks like it does precisely what we'd like. First step is installation. In your console, enter <span class="term-bit">npm install --save-dev gulp-autoprefixer</span></p>
+                    <p>Next, we're going to update our gulpfile.js to include gulp-autoprefixer. Your requirment sections should now look like the code below:</p>
+                    <div class="code">
+                        <div class="comment">// Requirements</div>
+                        <div>var gulp = require('gulp'),
+                            <div>sass = require('gulp-ruby-sass'),</div>
+                            <div>prefix = require('gulp-autoprefixer');</div>
+                        </div>
+                    </div>
+                    <p>And we'll update our tasks to the following as well:</p>
+                    <div class="code">
+                        <div class="comment">// Gulp task</div>
+                        <div>gulp.task('sass-to-css', function(){
+                                <div>return gulp.src(sassRoot+'main.scss')
+                                    <div>.pipe(sass({sourcemap: true}))</div>
+                                    <div>.pipe(prefix("last 3 versions")</div>
+                                    <div>.pipe(gulp.dest('public/css'));</div>
+                                </div>
+                            });
+                        </div>
+                    </div>
+                    <p>Inside the new pipe, you'll see "last 3 versions". Sometimes plugins have additional options. This is basically telling the auto-prefixer to get the last 3 versions of browsers.</p>
+                    <p>Let's test this out. Open your main.scss and edit the code to the following:</p>
+                    <div class="code">
+                        <div class="comment">// Just a test</div>
+                        <div>body{
+                            <div>background: black;</div>
+                        }</div>
+                        <div>a{
+                            <div>transition: .3s;</div>
+                        }</div>
+                    </div>
+                    <p>Now in your console, run <span class="term-bit">gulp sass-to-css</span>. Now open main.css. It should look like something below:</p>
+                    <div class="code">
+                        <div class="comment">// Just a test</div>
+                        <div>body{
+                            <div>background: black; }</div>
+                        </div>
+                        <div>a{
+                            <div>-webkit-transition: .3s;</div>
+                            <div>transition: .3s; }</div>
+                        </div>
+                    </div>
+                    <p>And there is your Super-task!</p>
+                </section>
+                <section class="page-section">
+                    <h1 id="bonus">Bonus</h1>
+                    <p>Here are some helpful tips on how to get the most from Gulp.</p>
+                    <h2 id="bonus-1">Gulp watch</h2>
+                    <p>Gulp is able to watch your files for any changes and run a task right out of the box. This is awesome for many reasons that are self explanitory. To have gulp watch, simply create a new task for it.</p>
+                    <div class="code">
+                        <div>gulp.task('watch-sass', function(){
+                            <div class="comment">// What to watch</div>
+                            <div>gulp.watch('build/sass/main.scss', function(){
+                                <div class="comment">// What to run</div>
+                                <div>gulp.run('sass-to-css');</div>
+                            });</div>
+                        });</div>
+                    </div>
+                    <h3>// What to watch</h3>
+                    <p>This is your file structure. Right now, it is pointing to /build/css/main.scss, because sass-to-css uses that file as a source.</p>
+                    <h3>// What to run</h3>
+                    <p>Here is where we include our task we'd like to run, in this case, sass-to-css. However, it can be any task you fancy.</p>
+                    <h2 id="bonus-2">All Files</h2>
+                    <p>Above, we targeted the single file of "build/sass/main.scss", but what if we had many files? or many imports into the SASS file? Well, Gulp has our back. By changing "build/sass/main.scss" to "build/sass/*.scss", Gulp will run the tasks on all files inside "build/sass/". If you have many sub-directories, simply use the following to target all files in all sub directories "build/sass/**/*.scss".</p>
+                    <h2 id="bonus-3">Usings Tasks as dependencies</h2>
+                    <p>You can also make tasks require to run other tasks. This is useful if you'd like to keep a task to be ran seperate, but also need it for a larger task.</p>
+                    <div class="code">
+                        <div class="comment">// Gulp task</div>
+                        <div>gulp.task('sass-to-css', function(){
+                                <div>return gulp.src(sassRoot+'main.scss')
+                                    <div>.pipe(sass({sourcemap: true}))</div>
+                                    <div>.pipe(gulp.dest('public/css'));</div>
+                                </div>
+                            });
+                        </div>
+                        <div>gulp.task('prefix', ['sass-to-css'], function(){
+                                <div>return gulp.src('public/css/*.css')
+                                    <div>.pipe(prefix("last 3 versions"))</div>
+                                    <div>.pipe(gulp.dest('public/css'));</div>
+                                </div>
+                            });
+                        </div>
+                    </div>
+                    <p>In the code above, prefix is require sass-to-css in order to run. You can include multiple tasks requirements, but they won't occur in order. A better option is to nest requirements, like below:</p>
+                    <div class="code">
+                        <div class="comment">// Gulp task</div>
+                        <div>gulp.task('sass-to-css', function(){
+                                <div>return gulp.src(sassRoot+'main.scss')
+                                    <div>.pipe(sass({sourcemap: true}))</div>
+                                    <div>.pipe(gulp.dest('public/css'));</div>
+                                </div>
+                            });
+                        </div>
+                        <div>gulp.task('prefix', ['sass-to-css'], function(){
+                                <div>return gulp.src('public/css/*.css')
+                                    <div>.pipe(prefix("last 3 versions"))</div>
+                                    <div>.pipe(gulp.dest('public/css'));</div>
+                                </div>
+                            });
+                        </div>
+                        <div>gulp.task('minify-css', ['prefix'], function(){
+                                <div>return gulp.src('public/css/*.css')
+                                    <div>.pipe(minify())</div>
+                                    <div>.pipe(gulp.dest('public/css'));</div>
+                                </div>
+                            });
+                        </div>
+                    </div>
+                </section>
+                <section class="page-section">
+                    <h1 id="plugins">Useful Plugins</h1>
+                    <p>Below are listed some of my favorite plugins.</p>
+                    <h2><a href="https://npmjs.org/package/gulp-ruby-sass/">gulp-ruby-sass</a></h2>
+                    <p>Compiles SASS into CSS.</p>
+                    <h2><a href="https://www.npmjs.org/package/gulp-autoprefixer/">gulp-autoprefixer</a></h2>
+                    <p>Adds vendor prefixes to CSS.</p>
+                    <h2><a href="https://npmjs.org/package/gulp-concat/">gulp-concat</a></h2>
+                    <p>Concatinate many files into one large file</p>
+                    <h2><a href="https://www.npmjs.org/package/gulp-compressor/">gulp-compressor</a></h2>
+                    <p>Compresses HTML, Javascript, or CSS.</p>
+                    <h2><a href="https://www.npmjs.org/package/gulp-ftp/">gulp-FTP</a></h2>
+                    <p>Uploads files to a server.</p>
+                    <h2><a href="https://www.npmjs.org/package/gulp-iconfont/">gulp-iconfont</a></a></h2>
+                    <p>To be fair, I haven't actually gotten this to work. The font works, but my Codepoints seem to not produce anything. This might be due to how I am saving my svg, I don't know, but the prospect gets me all excited.</p>
+                </section>
+                <section class="page-section">
+                    <h1 id="colophon">Colophon</h1>
+                    <p>Written by <a href="http://twitter.com/chdhmphry">Chad Humphrey</a> on June 23rd, 2014 using <a href="https://github.com/atom">Atom</a> and <a href="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</a>. CSS precompiled from SASS with <a href="http://gulpjs.com">Gulp.js</a>. Type set with LTC Bodoni 175, Proxima Nova, and Source Code Pro front <a href="https://typekit.com">Adobe Typekit</a>. View source on <a href="http://github.com">Github</a>.</p>
+                </section>
+            </article>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- smoosh -->
+        <script src="js/main.js"></script>
+        <!-- endsmoosh -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-49147709-2', 'hmphry.com');
+            ga('send', 'pageview');
+        </script>
+        <!-- end Content -->
+    </body>
+</html>
